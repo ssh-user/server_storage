@@ -1,0 +1,9 @@
+.fileListPath{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2% 2% 2%;
+}
+
+.fileListPath > input{
+    width: 100%;
+}

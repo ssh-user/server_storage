@@ -1,0 +1,23 @@
+.footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(173, 173, 173);    
+    overflow-y: auto;
+    max-height: 100px;
+    width: 100%;
+}
+
+.footer table{
+    table-layout: fixed;
+    width: 100%;
+    min-width: 450px;
+    white-space: nowrap;
+}
+
+.footer table td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

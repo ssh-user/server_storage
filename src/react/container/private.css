@@ -1,0 +1,21 @@
+.private-container{
+    display: grid;
+    grid-template-rows: 8% 8% 74% 10%;
+    background-color: rgb(220, 255, 220);
+}
+
+.private-container .header{
+    color: green;
+    background-color: rgb(170, 250, 170);
+}
+
+.private-container .group_controls{        
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    box-sizing: border-box;
+    border-top: 1px solid rgb(173, 173, 173);
+    padding: 5px 0;
+}

@@ -1,0 +1,29 @@
+/* global */
+html, body, .app, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* main view container with 2 columns*/
+.main_container_full {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 100%;
+}
+
+/* main view container with 1 columns*/
+.main_container_short{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    height: 100%;
+}

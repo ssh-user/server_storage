@@ -1,0 +1,84 @@
+{
+    "name": "server_storage",
+    "productName": "Server-storage",
+    "version": "0.0.1",
+    "description": "Later",
+    "main": "webpack_build/index.js",
+    "scripts": {
+        "start": "webpack --mode development && electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "eslint src --color"
+    },
+    "keywords": [],
+    "author": "SSH",
+    "license": "MIT",
+    "config": {
+        "forge": {
+            "make_targets": {
+                "win32": [
+                    "squirrel"
+                ],
+                "darwin": [
+                    "zip"
+                ],
+                "linux": [
+                    "deb",
+                    "rpm"
+                ]
+            },
+            "electronPackagerConfig": {
+                "packageManager": "yarn"
+            },
+            "electronWinstallerConfig": {
+                "name": "server_storage"
+            },
+            "electronInstallerDebian": {},
+            "electronInstallerRedhat": {},
+            "github_repository": {
+                "owner": "",
+                "name": ""
+            },
+            "windowsStoreConfig": {
+                "packageName": "",
+                "name": "server_storage"
+            }
+        }
+    },
+    "dependencies": {
+        "electron-compile": "^6.4.2",
+        "electron-squirrel-startup": "^1.0.0",
+        "mkdirp": "^0.5.1",
+        "ssh2": "^0.6.1"
+    },
+    "devDependencies": {
+        "@types/electron": "^1.6.10",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "clean-webpack-plugin": "^0.1.19",
+        "copy-webpack-plugin": "^4.5.1",
+        "css-loader": "^0.28.11",
+        "electron-forge": "^5.2.2",
+        "electron-prebuilt-compile": "^2.0.4",
+        "eslint": "^3",
+        "eslint-config-airbnb": "^15",
+        "eslint-plugin-import": "^2",
+        "eslint-plugin-jsx-a11y": "^5",
+        "eslint-plugin-react": "^7",
+        "html-loader": "^0.5.5",
+        "react": "^16.4.0",
+        "react-dom": "^16.4.0",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.2.2",
+        "react-toastify": "^4.1.0",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.10.1",
+        "webpack-cli": "^2.1.4"
+    }
+}

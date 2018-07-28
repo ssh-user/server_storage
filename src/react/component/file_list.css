@@ -1,0 +1,47 @@
+.file_list_box{
+    margin: 0;
+
+    box-sizing: border-box;
+    padding: 5px 0;    
+}
+
+.table{
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table th{
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.table td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table .row_icon{
+    width: 5%;
+}
+.table .row_filename{
+    width: 45%;
+}
+.table .row_size{
+    width: 15%;
+}
+.table .row_date{
+    width: 35%;
+}
+
+.table .image{
+    max-height: 25px;
+    vertical-align: middle;
+}
+
+.table .active{
+    color: white;
+    background-color: rgb(110, 110, 240);    
+}
